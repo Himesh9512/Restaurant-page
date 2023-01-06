@@ -1,12 +1,16 @@
 import './style.css';
+import BGImage from './bg-image.png'
 
-function helloWorld(){
+function heroPage(){
     const content = document.getElementById('content');
-    const testElement = document.createElement('div');
-    testElement.classList.add('test');
-    testElement.innerText = "Hello guys this is under construction website";
-    content.appendChild(testElement);
-    console.log("hello world");
+    createHeader(content);
+};
+
+function createHeader(content) {
+    const header = document.createElement('div');
+    header.setAttribute('id','header');
+    header.innerText = "Hello guys";
+    content.appendChild(header);
 }
 
-helloWorld();
+heroPage();
