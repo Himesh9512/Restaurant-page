@@ -10,6 +10,11 @@ module.exports = {
   devServer: {
     static: './dist/',
     liveReload: true,
+    open: {
+      app: {
+        name: 'firefox',
+      }
+    }
   },
   target: 'web',
   module: {
