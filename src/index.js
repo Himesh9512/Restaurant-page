@@ -1,7 +1,6 @@
-import logoImage from './logo.png';
+import logoImage from './assets/images/logo.png';
 import { createNavigationButton, createImageElement } from './utilities';
 import './style.css';
-import backgroundImage from './bg-image.jpg';
 
 // create header of page
 const createHeader = () => {
