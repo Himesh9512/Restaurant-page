@@ -8,8 +8,10 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
-    static: path.join(__dirname,'dist'),
+    static: './dist/',
+    liveReload: true,
   },
+  target: 'web',
   module: {
     rules: [
       {
