@@ -36,8 +36,12 @@
     border-bottom: 2px solid #c28649;
     cursor: pointer;
 }
+.logo {
+    height: auto;
+    width: 5%;
+}
 /*
-#content {
+#main {
     display: flex;
     flex-direction: column;
     justify-content: start;
