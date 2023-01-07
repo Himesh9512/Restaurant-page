@@ -71,18 +71,19 @@
     font-family: 'Henny Penny';
 }
 
-/*
-.menu-button button {
+
+.menu-button button{
     height: 50px;
     width: 100px;
     border-radius: 10px;
     background-color: #c28649;
     border: none;
     cursor: pointer;
+    text-align: center;
 }
 
 .menu-button button:hover {
     border: 1px solid #c28649;
     background-color: transparent;
     color: #c28649;
-} */
+}
