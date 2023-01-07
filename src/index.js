@@ -1,6 +1,7 @@
 import logoImage from './logo.png';
 import { createNavigationButton, createImageElement } from './utilities';
 import './style.css';
+import backgroundImage from './bg-image.jpg';
 
 // create header of page
 const createHeader = () => {
@@ -28,10 +29,16 @@ const navigationTabs = () => {
     return navigationBar;
 }
 
-function heroPage() {
+const createMainPage = () => {
+    const mainPage = document.createElement('div');
+    mainPage.setAttribute('id','main');
+
+    return mainPage;
+}
+
+(function heroPage() {
     const content = document.getElementById('content');
 
     content.appendChild(createHeader());
-};
-
-heroPage();
+    content.appendChild(createMainPage());
+})();
