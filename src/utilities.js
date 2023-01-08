@@ -1,4 +1,5 @@
 import loadHomePage from './homePage.js';
+import loadMenuPage from './menuPage.js';
 
 export const createNavigationButton = (buttonName) => {
     const button = document.createElement('div');
@@ -36,11 +37,9 @@ export const setActiveButton = (button) => {
 
 export const loadScreen = (button) => {
     if(button === 'Home'){
-        console.log('showing home page');
         loadHomePage();
     } else if (button === 'Menu') {
-        console.log('showing menu page');
-        // loadMenuPage();
+        loadMenuPage();
     } else {
         console.log('showing contact page');
         // loadContactPage();
