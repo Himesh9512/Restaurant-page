@@ -58,6 +58,7 @@
     height: 100%;
 }
 
+/*  || Home page style ||  */
 .content-text {
     font-family: 'Playfair Display SC';
     font-size: 4.8rem;
@@ -72,7 +73,7 @@
 }
 
 
-.menu-button button{
+.menu-button button {
     height: 50px;
     width: 100px;
     border-radius: 10px;
@@ -87,3 +88,52 @@
     background-color: transparent;
     color: #c28649;
 }
+
+/*  || Menu page style ||  */
+/* .menu {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    width: 65%;
+    border: 2px solid #c28649;
+    border-radius: 40px;
+    gap: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1%;
+} */
+
+/* .menu-title {
+    font-size: 1.5rem;
+    font-family: 'Henny Penny';
+    border-bottom: 3px solid #c28649
+} */
+
+/* .menu-item {
+    width: 100%;
+} */
+
+/* .menu-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+} */
+
+/* .item-info {
+    font-family: 'Moon Dance';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6em;
+    font-weight: 900;
+    color: #d69b60;
+} */
+
+/* .item-des {
+    font-family: 'Indie Flower';
+    font-size: 1.2em;
+} */

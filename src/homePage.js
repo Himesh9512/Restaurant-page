@@ -1,3 +1,5 @@
+import loadMenuPage from "./menuPage";
+
 const addMainText = () => {
     const mainContentText = document.createElement('div');
     mainContentText.classList.add('content-text');
@@ -13,16 +15,18 @@ const createMenuButton = () => {
     const button = document.createElement('button');
     button.innerText = 'Menu';
 
-    button.addEventListener('click',()=>{
-        console.log('menu is here');
-    })
+    button.addEventListener('click', () => {
+        loadMenuPage();
+    });
+
     menuButton.appendChild(button);
 
     return menuButton;
 }
-export default function loadHomePage () {
+
+export default function loadHomePage() {
     const main = document.getElementById('main');
-    
+
     main.innerHTML = '';
     main.appendChild(addMainText());
     main.appendChild(createMenuButton());
