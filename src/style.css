@@ -138,6 +138,7 @@
 /*  || Contact page style ||  */
 
 .contact {
+    font-family: 'Playfair Display SC';
     align-self: center;
     background-color: rgba(0,0,0,0.5);
     height: 100%;
@@ -148,8 +149,9 @@
     justify-content: space-around;
     align-items: flex-start;
     font-size: 1.3em;
-    overflow: scroll;
-    padding: 0 10%;
+    padding: 1% 10%;
+    gap: 10px;
+    border: 2px solid #c28649;
   }
   
   .contact-item {
@@ -159,6 +161,6 @@
   
   .contact-item img {
     height: auto;
-    width: 400px;
+    width: 350px;
   }
   
