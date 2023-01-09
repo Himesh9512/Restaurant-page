@@ -1,21 +1,20 @@
 import loadHomePage from './homePage.js';
 import loadMenuPage from './menuPage.js';
+import loadContactPage from './contactPage.js';
 
 export const createNavigationButton = (buttonName) => {
     const button = document.createElement('div');
     button.classList.add('nav-item');
     button.innerText = buttonName;
 
-    button.addEventListener('click',(e)=>{
-        if(e.target.classList.contains('selected')) return;
-        setActiveButton(button);
+    button.addEventListener('click', (e) => {
         loadScreen(buttonName);
     })
 
     return button;
 }
 
-export const createImageElement = (source,alter,className) => {
+export const createImageElement = (source, alter, className) => {
     let image = new Image();
     image.src = source;
     image.alt = alter;
@@ -23,30 +22,18 @@ export const createImageElement = (source,alter,className) => {
     return image;
 }
 
-export const setActiveButton = (button) => {
-    const navButtons = document.querySelectorAll('.nav-item');
-
-    navButtons.forEach((button)=>{
-        if(button != this){
-            button.classList.remove('selected');
-        }
-    })
-
-    button.classList.add('selected');
-}
-
 export const loadScreen = (button) => {
-    if(button === 'Home'){
+    if (button === 'Home') {
         loadHomePage();
     } else if (button === 'Menu') {
         loadMenuPage();
     } else {
         console.log('showing contact page');
-        // loadContactPage();
+        loadContactPage();
     }
 }
 
-export const createMenuItem = (cookieName,cookiePrice,cookieDescription) => {
+export const createMenuItem = (cookieName, cookiePrice, cookieDescription) => {
     const menuItem = document.createElement('div');
     menuItem.classList.add('menu-item');
 
@@ -72,4 +59,21 @@ export const createMenuItem = (cookieName,cookiePrice,cookieDescription) => {
     menuItem.appendChild(itemDescription);
 
     return menuItem;
+}
+
+export const createContactItem = (iconName,content) => {
+    const contactItem = document.createElement('div');
+    contactItem.classList.add('contact-item');
+
+    const contactItemIcon = document.createElement('span');
+    contactItemIcon.classList.add('material-icons');
+    contactItemIcon.innerText = iconName;
+
+    const contactItemContent = document.createElement('div');
+    contactItemContent.innerHTML = content;
+
+    contactItem.appendChild(contactItemIcon);
+    contactItem.appendChild(contactItemContent);
+
+    return contactItem;
 }

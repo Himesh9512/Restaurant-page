@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 
 #content {
@@ -32,14 +33,10 @@
     height: 35px;
 }
 
-.nav-item:hover,
-.selected {
+.nav-item:hover {
     color: #c28649;
-    cursor: pointer;
-}
-
-.selected {
     border-bottom: 2px solid #c28649;
+    cursor: pointer;
 }
 
 .logo {
@@ -137,3 +134,31 @@
     font-family: 'Indie Flower';
     font-size: 1.2em;
 }
+
+/*  || Contact page style ||  */
+
+.contact {
+    align-self: center;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: fit-content;
+    border-radius: 45px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 1.3em;
+    overflow: scroll;
+    padding: 0 10%;
+  }
+  
+  .contact-item {
+    display: flex;
+    gap: 1em;
+  }
+  
+  .contact-item img {
+    height: auto;
+    width: 400px;
+  }
+  
